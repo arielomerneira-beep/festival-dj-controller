@@ -59,3 +59,8 @@ export default defineConfig({
     "@vitejs/plugin-react": "^4"
   }
 }
+package.json
+vite.config.js
+index.html
+src/main.tsx
+src/App.tsx
