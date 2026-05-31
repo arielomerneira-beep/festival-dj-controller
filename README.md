@@ -50,6 +50,7 @@ export default defineConfig({
   },
   "dependencies": {
     "react": "^18",
+Festival Arena Full App
     "react-dom": "^18",
     "wavesurfer.js": "^7",
     "tone": "^15"
