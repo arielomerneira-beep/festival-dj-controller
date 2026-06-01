@@ -1,0 +1,115 @@
+import React from "react";
+
+export default function App() {
+  return (
+    <div
+      style={{
+        background: "#000",
+        color: "white",
+        minHeight: "100vh",
+        padding: "20px",
+        fontFamily: "Arial"
+      }}
+    >
+      <h1 style={{ color: "cyan", textAlign: "center" }}>
+        FESTIVAL / ARENA DJ EDITION
+      </h1>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+          gap: "20px"
+        }}
+      >
+        {/* Deck A */}
+        <div
+          style={{
+            background: "#111",
+            padding: "20px",
+            borderRadius: "20px"
+          }}
+        >
+          <h2>DECK A</h2>
+
+          <div
+            style={{
+              width: "220px",
+              height: "220px",
+              borderRadius: "50%",
+              border: "5px solid cyan",
+              margin: "auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
+            JOG A
+          </div>
+
+          <input type="file" />
+          <br /><br />
+
+          <button>PLAY</button>
+          <button>SYNC</button>
+          <button>SCRATCH</button>
+        </div>
+
+        {/* Mixer */}
+        <div
+          style={{
+            background: "#222",
+            padding: "20px",
+            borderRadius: "20px"
+          }}
+        >
+          <h2>MIXER PRO</h2>
+
+          <p>Waveforms reales</p>
+          <p>BPM detector</p>
+          <p>Auto Sync</p>
+          <p>Hot Cues</p>
+          <p>FX Echo / Reverb / Filter</p>
+          <p>RGB Pads</p>
+          <p>Streaming Live</p>
+          <p>IA Auto Mix</p>
+
+          <input type="range" />
+        </div>
+
+        {/* Deck B */}
+        <div
+          style={{
+            background: "#111",
+            padding: "20px",
+            borderRadius: "20px"
+          }}
+        >
+          <h2>DECK B</h2>
+
+          <div
+            style={{
+              width: "220px",
+              height: "220px",
+              borderRadius: "50%",
+              border: "5px solid magenta",
+              margin: "auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
+            JOG B
+          </div>
+
+          <input type="file" />
+          <br /><br />
+
+          <button>PLAY</button>
+          <button>SYNC</button>
+          <button>SCRATCH</button>
+        </div>
+      </div>
+    </div>
+  );
+}
