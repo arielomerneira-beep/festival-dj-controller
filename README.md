@@ -1,66 +1,64 @@
-# festival-dj-controller
-Controller DJ 
+# Festival DJ Controller
+
+A modern DJ controller application built with React and Vite.
+
+## Project Structure
+
+```
 festival-dj-controller
- ├── package.json
- ├── vite.config.js
- ├── index.html
- └── src
-      ├── main.tsx
-      └── App.tsx
-   {
-  "name": "festival-dj-controller",
-  "version": "1.0.0",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "wavesurfer.js": "^7",
-    "tone": "^15",
-    "vite": "^5"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  }
-}
-<!DOCTYPE html>
-<html>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+│
+├── package.json
+├── vite.config.js
+├── index.html
+├── README.md
+└── src
+    ├── main.jsx
+    └── App.jsx
+```
 
-ReactDOM.createRoot(document.getElementById("root")!).render(<App />);
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+## Getting Started
 
-export default defineConfig({
-  plugins: [react()]
-})
-{
-  "name": "festival-dj-controller",
-  "private": true,
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "wavesurfer.js": "^7",
-    "tone": "^15"
-  },
-  "devDependencies": {
-    "vite": "^5",
-    "@vitejs/plugin-react": "^4"
-  }
-}
-package.json
-vite.config.js
-index.html
-src/main.tsx
-src/App.tsx
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+```
+
+### Development
+
+Run the development server:
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build
+
+Build for production:
+```bash
+npm run build
+```
+
+### Preview
+
+Preview the production build:
+```bash
+npm run preview
+```
+
+## Technologies Used
+
+- **React** - UI library
+- **Vite** - Build tool and dev server
+- **JavaScript (JSX)** - Programming language
+
+## License
+
+MIT
